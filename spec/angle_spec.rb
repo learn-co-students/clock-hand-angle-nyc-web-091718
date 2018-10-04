@@ -1,10 +1,14 @@
+require 'pry'
+
 describe "#clock_angle(time)" do
   it 'returns the correct angle between the clock hands representing 9:00' do
     expect(clock_angle("9:00")).to eq(90)
   end
 
   it 'returns the correct angle between the clock hands representing 12:00' do
+# binding.pry
     expect(clock_angle("12:00")).to eq(0)
+
   end
 
   it 'returns the correct angle between the clock hands representing 6:00' do
