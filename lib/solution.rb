@@ -12,7 +12,7 @@ def clock_angle(time)
   time_angle = time_angle + 360 if time_angle < 0
   time_angle = (time_angle - 360) * -1 if time_angle > 180
 
-  time_angle
+  time_angle.round(1)
 end
 clock_angle("12:57")
 binding.pry
